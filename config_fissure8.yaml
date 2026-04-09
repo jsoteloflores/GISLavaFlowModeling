@@ -1,0 +1,30 @@
+# Fissure 8 - 2018 Lower East Rift Zone Eruption
+# Leilani Estates, Kilauea, Hawaii
+#
+# The 2018 eruption's Fissure 8 was the dominant vent from early June
+# through early August 2018. Peak effusion rate ~50-200 m3/s.
+# Lava channeled NE ~13 km to the coast at Kapoho Bay.
+
+dem_path: data/lerz_dem_2013.tif
+output_dir: outputs_fissure8/
+
+vent:
+  mode: point
+  # Fissure 8: 19.461684 N, 154.908942 W -> UTM 32605
+  x: 299615.6
+  y: 2153025.5
+
+dt: 10.0
+total_time: 172800.0       # 48 hours (2 days of peak eruption)
+q_vent: 150.0              # ~150 m3/s peak effusion rate
+rho: 2600.0
+g: 9.81
+tau_y: 200.0               # lower yield strength - fluid pahoehoe/aa
+min_thickness: 0.01
+max_movable_fraction: 0.3
+output_every: 200
+allow_edge_outflow: false   # lava pools at coast/DEM edge
+routing_backend: custom_mfd
+slope_weight_exponent: 1.0
+save_geotiffs: true
+save_plots: true

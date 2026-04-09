@@ -1,0 +1,9 @@
+=== Lava Flow Simulation Summary ===
+Total time:        172800.0 s
+Total steps:       17280
+Volume added:      25920000.0 m³
+Volume stored:     25918080.4 m³
+Volume balance:    1919.61 m³ (difference)
+Active cells:      230872
+Inundated area:    22308163.7 m²
+Max thickness:     36.222 m
