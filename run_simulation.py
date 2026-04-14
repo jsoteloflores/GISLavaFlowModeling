@@ -279,9 +279,7 @@ def compute_h_move(h_lava, s_eff, rho, g, tau_y, f_max, min_thickness):
     h_move[h_lava < min_thickness] = 0.0
     return h_move
 
-# ╔══════════════════════════════════════════════════════════════════╗
-# ║                  SIMULATION STATE                               ║
-# ╚══════════════════════════════════════════════════════════════════╝
+# Simulation State
 
 @dataclass
 class SimulationState:
